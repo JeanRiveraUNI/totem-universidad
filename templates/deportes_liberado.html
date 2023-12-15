@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Liberar Deporte</title>
+    <link rel="stylesheet" href="../static/reserva.css">
+</head>
+<body>
+    <h1>Liberar Deporte</h1>
+    <p>Estás utilizando el siguiente deporte:</p>
+    <form action="/liberardeporte" method="POST">
+        <fieldset>
+            <label for="deporte">Deporte Ocupado:</label>
+            <input type="text" id="deporte" name="deporte" value="{{ nombre_deporte }}" readonly><br><br>
+        </fieldset>
+        <br>
+        <input type="submit" value="Liberar">
+    </form>
+    <a href="/user_profile">Regresar a tu perfil</a>
+    <form action="/logout" method="POST">
+        <input type="submit" value="Cerrar Sesión">
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="../static/js/script.login.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="../static/user_profile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="title">
+            <h3>Bienvenido, {{ username }}</h3>
+            <br>
+            <h4>¿Qué deseas hacer hoy?</h4>
+            <h5>¡Bienvenido al Tótem de Autoayuda!...</h5>
+        </div>
+        <br>
+        <section class="">
+            <div class="section-container">
+                <!-- Card para el botón de Biblioteca -->
+                <div class="profile-card">
+                    <p>
+                        <h4>¡Bienvenido a la Biblioteca Interactiva!</h4>
+                        <br>
+                        Reserva tu sala de estudios fácilmente con nuestro Tótem de Autoayuda. 
+                        Selecciona tu horario y sumérgete en un espacio perfecto para concentrarte en tus estudios.
+                        <br>
+                        ¡Bienvenido a tu nuevo rincón académico!
+                    </p>
+                    <button class="profile-button" onclick="window.location.href='/biblioteca'">Biblioteca</button>
+                </div>
+
+                <!-- Card para el botón de Certificados -->
+                <div class="profile-card">
+                    <p>
+                        <h4>Bienvenido al Centro de Certificados!</h4>
+                        <br>
+                        Aquí, obtener tus certificados es más simple que nunca con nuestro Tótem de Autoayuda. 
+                        Selecciona la opción "Solicitud de Certificados", 
+                        sigue unos simples pasos, ¡y listo! 
+                        <br>
+                        Obtén tus documentos de manera rápida y eficiente.
+                    </p>
+                    <button class="profile-button" onclick="window.location.href='/certificados'">Certificados</button>
+                </div>
+
+                <!-- Card para el botón de Deportes -->
+                <div class="profile-card">
+                    <p>
+                        <h4>¡Bienvenido al DAE Interactive!</h4>
+                        <br>
+                        Aquí puedes solicitar todo lo que necesitas para disfrutar de nuestro espacio deportivo. 
+                        Desde mesas de ping-pong hasta reservas en la multicancha, todo está a tu alcance con nuestro Tótem de Autoayuda. 
+                        Selecciona tus opciones, elige tu horario y prepárate para vivir momentos deportivos increíbles.
+                        <br>
+                        ¡Estamos aquí para que aproveches al máximo tus actividades recreativas¡
+                    </p>
+                    <button class="profile-button" onclick="window.location.href='/deportes'">Deportes</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="../static/js/script.login.js"></script>
+</body>
+
+</html>

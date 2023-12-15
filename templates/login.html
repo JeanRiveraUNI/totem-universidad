@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Totem INACAP</title>
+    <link rel="stylesheet" href="../static/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>INACAP</h1>
+        <h3>¡CONSTRUYENDO PROFESIONALES!</h3>
+        <form class="login-form" action="/dashboard" method="POST">
+            <fieldset>
+                <legend class="form-legend">#TuTotemInacap</legend>
+                <div class="form-group">
+                    <label for="username">Nombre de Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" value="Iniciar sesión">Iniciar sesión</button>
+                </div>
+            </fieldset>
+        </form>
+        <div class="terms-container">
+            <a class="terms-link" href="../static/terminosycondiciones.pdf" target="_blank">Términos y condiciones</a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="../static/js/script.login.js"></script>
+</body>
+</html>

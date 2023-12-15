@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Deportes</title>
+    <link rel="stylesheet" href="../static/reserva.css">
+</head>
+<body>
+    <h1>Reservar Área Recreativa</h1>
+    <form action="/reservar-deporte" method="POST">
+        <fieldset>
+            <legend>Detalles de Reserva</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="username">Username:</label>
+            <input type="text" id="rut" name="username" ><br><br>
+
+            <label for="deportes">Seleccionar Deporte:</label>
+            <select id="deportes" name="deportes">
+                {% for deporte in deportes %}
+                    <option value="{{ deporte['nombre'] }}">{{ deporte['nombre'] }}</option>
+                {% endfor %}
+            </select>
+        </fieldset>
+        <br>
+        <input type="submit" value="Reservar">
+    </form>
+    <a href="/user_profile">Regresar a tu perfil</a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="../static/js/script.login.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Liberar Sala</title>
+    <link rel="stylesheet" href="../static/reserva.css">
+</head>
+<body>
+    <h1>Liberar Sala</h1>
+    <p>Estás ocupando la siguiente sala:</p>
+    <form action="/liberar" method="POST">
+        <fieldset>
+            <label for="sala">Sala Ocupada:</label>
+            <input type="text" id="sala" name="sala" value="{{ nombre_sala }}" readonly><br><br>
+        </fieldset>
+        <br>
+        <input type="submit" value="Liberar">
+    </form>
+    <a href="/user_profile">Regresar a tu perfil</a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="../static/js/script.login.js"></script>
+</body>
+</html>
