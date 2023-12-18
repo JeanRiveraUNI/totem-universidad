@@ -1,33 +1,46 @@
+/**
+ * FILEPATH: /c:/Users/NewOver/Desktop/totem-universidad/static/user_profile.css
+ * 
+ * Styles for the user profile page.
+ */
+
+/* Set the font family, margin, height, and background color for the body */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    height: 100vh;
-    background-color: #ECECEC;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23d8c4c4' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23cf9090' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23d35050' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23cf1717' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
-    background-attachment: fixed;
-    background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  background-color: #ECECEC;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23d8c4c4' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23cf9090' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23d35050' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23cf1717' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
+/* Set the display, justify-content, width, padding, and margin for the container */
 .container {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 0 2rem;
-    margin: 0 auto;
-}
-.title {
-    font-size: 3rem;
-    font-weight: 600;
-    color: #081828;
-    text-align: center;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
 }
 
-p {
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-    line-height: 24px;
+/* Set the font size, font weight, color, and text alignment for the title */
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #081828;
+  text-align: center;
 }
+
+/* Set the margin, padding, font size, and line height for paragraphs */
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+/* Set the font weight, margin, and color for headings */
 h1,
 h2,
 h3,
@@ -39,67 +52,72 @@ h6 {
   color: #081828;
 }
 
+/* Set the font size for each heading level */
 h1 {
-    font-size: 50px;
-  }
-  
-  h2 {
-    font-size: 40px;
-  }
-  
-  h3 {
-    font-size: 30px;
-  }
-  
-  h4 {
-    font-size: 25px;
-  }
-  
-  h5 {
-    font-size: 20px;
-  }
-  
-  h6 {
-    font-size: 16px;
-  }
-  
+  font-size: 50px;
+}
 
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+/* Set the background color, border radius, box shadow, padding, and margin for profile containers and cards */
 .profile-container,
 .profile-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    padding: 15px;
-    margin: 50px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  margin: 50px;
 }
 
+/* Set the text alignment for profile cards */
 .profile-card {
-    text-align: center;
+  text-align: center;
 }
 
+/* Set the padding, font size, background color, color, border, border radius, cursor, and margin top for profile buttons */
 .profile-button {
-    padding: 10px;
-    font-size: 16px;
-    background-color: #ce1616;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 15px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #ce1616;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
 }
 
+/* Set the background color for profile buttons on hover */
 .profile-button:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
+/* Set the padding, font size, background color, color, border, border radius, cursor, and width for form group buttons and back buttons */
 .form-group button, 
 .back-button {
-    padding: 10px;
-    font-size: 16px;
-    background-color: #ce1616;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #ce1616;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
 }

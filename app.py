@@ -18,6 +18,18 @@ def login():
 
 @app.route('/dashboard', methods=['GET', 'POST'])
 def dashboard():
+    """
+    Función que maneja la ruta '/dashboard' para el método GET y POST.
+    Si la solicitud es POST, verifica las credenciales de inicio de sesión y redirige al perfil correspondiente.
+    Si la solicitud es GET, muestra el formulario de inicio de sesión.
+
+    Returns:
+        Si la solicitud es POST y las credenciales son válidas:
+            - Si el rol del usuario es 'admin', renderiza el perfil de administrador.
+            - Si el rol del usuario es 'trabajador', renderiza el perfil de trabajador.
+        Si la solicitud es POST y las credenciales son inválidas, renderiza un mensaje de error.
+        Si la solicitud es GET, renderiza el formulario de inicio de sesión.
+    """
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']

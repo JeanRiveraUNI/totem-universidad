@@ -1,3 +1,10 @@
+/**
+ * FILEPATH: /c:/Users/NewOver/Desktop/totem-universidad/static/reserva.css
+ * 
+ * Styles for the login page.
+ */
+
+/* Styles for the body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,6 +18,7 @@ body {
     background-size: cover;
 }
 
+/* Styles for the login container */
 .login-container {
     background-color: #fff;
     border-radius: 8px;
@@ -19,33 +27,39 @@ body {
     width: 300px;
 }
 
+/* Styles for the login container heading */
 .login-container h1 {
     text-align: center;
     margin-bottom: 30px;
     color: #333;
 }
 
+/* Styles for the login container subheading */
 .login-container h3 {
     text-align: center;
     margin-bottom: 30px;
     color: #555;
 }
 
+/* Styles for the login form */
 .login-form {
     display: block;
     flex-direction: column;
 }
 
+/* Styles for the login form legend */
 .login-form legend {
     text-align: center;
     margin-bottom: 30px;
     color: #666;
 }
 
+/* Styles for the form group */
 .form-group {
     margin-bottom: 15px;
 }
 
+/* Styles for the form group label */
 .form-group label {
     margin-bottom: 5px;
     color: #555;
@@ -53,6 +67,7 @@ body {
     text-align: center;
 }
 
+/* Styles for the form group input */
 .form-group input {
     padding: 8px;
     font-size: 16px;
@@ -62,6 +77,7 @@ body {
     width: 100%;
 }
 
+/* Styles for the form group buttons */
 .form-group button, 
 .back-button {
     padding: 10px;
@@ -73,15 +89,19 @@ body {
     cursor: pointer;
     width: 100%;
 }
+
+/* Styles for the anchor tag */
 a {
     text-decoration: none;
     color: #fff;
 }
 
+/* Styles for the form group button on hover */
 .form-group button:hover {
     background-color: #45a049;
 }
 
+/* Styles for the terms container */
 .terms-container {
     border-top: 1px solid #ddd;
     padding-top: 15px;
