@@ -62,7 +62,8 @@ body {
     width: 100%;
 }
 
-.form-group button {
+.form-group button, 
+.back-button {
     padding: 10px;
     font-size: 16px;
     background-color: #ce1616;
@@ -71,6 +72,10 @@ body {
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
+}
+a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .form-group button:hover {
